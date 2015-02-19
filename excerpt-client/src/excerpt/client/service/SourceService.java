@@ -1,7 +1,7 @@
 package excerpt.client.service;
 
-import excerpt.client.conf.ConfigReader;
-import excerpt.client.conf.ConfigWriter;
+import excerpt.client.config.XMLReader;
+import excerpt.client.config.XMLWriter;
 import excerpt.client.ui.FrameManager;
 
 /**
@@ -11,12 +11,12 @@ import excerpt.client.ui.FrameManager;
 public class SourceService {
     private static SourceService sourceService;
     private FrameManager frameManager;
-    private ConfigWriter configWriter;
-    private ConfigReader configReader;
+    private XMLWriter XMLWriter;
+    private XMLReader XMLReader;
 
-    private SourceService(){
-        configWriter = ConfigWriter.getInstance();
-        configReader = ConfigReader.getInstance();
+    private SourceService() {
+        XMLWriter = XMLWriter.getInstance();
+        XMLReader = XMLReader.getInstance();
         frameManager = FrameManager.getInstance();
     }
 
@@ -29,8 +29,8 @@ public class SourceService {
     }
 
     public void init() {
-        configWriter.initConfigWriter();
-        configReader.initConfigReader();
+        XMLWriter.initConfigWriter();
+        XMLReader.initConfigReader();
         frameManager.initMainFrame();
     }
 }

@@ -1,0 +1,22 @@
+﻿<!--save the description of books-->
+<Books>
+    <Book name="Fifty Great Short Stories">
+        <Author>Milton Crane</Author>
+        <Description>Fifty Great Short Stories</Description>
+        <Publisher>Bantam Classics; Reissue</Publisher>
+        <Edition></Edition>
+        <Publication>1983年8月1日</Publication>
+        <Language>English</Language>
+        <Binding>Paperback</Binding>
+        <Image>Fifty Great Short Stories.jpg</Image>
+        <ISBN>0553277456</ISBN>
+        <Pages>592</Pages>
+        <Weight>277 g</Weight>
+
+    </Book>
+
+
+</Books>
+
+
+

@@ -1,0 +1,1 @@
+package excerpt.client.ui.panel;import javax.swing.*;/** * @author Shen Jiaqi * @version 2015/2/17 */public class FavorPanel extends JPanel {}

@@ -1,5 +1,7 @@
 package excerpt.client.ui;
 
+import excerpt.client.ui.frame.MainFrame;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -12,7 +14,7 @@ public class FrameManager {
     private static FrameManager frameManager = null;
 
     private FrameManager() {
-        initMainFrame();
+
     }
 
     public static synchronized FrameManager getInstance() {
@@ -26,9 +28,9 @@ public class FrameManager {
     public void initMainFrame() {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
-                JFrame frame = new JFrame();
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setVisible(true);
+                JFrame excerptFrame = new MainFrame();
+                excerptFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                excerptFrame.setVisible(true);
             }
         });
     }
